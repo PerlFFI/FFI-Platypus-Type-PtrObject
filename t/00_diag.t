@@ -11,7 +11,11 @@ my $post_diag;
 
 $modules{$_} = $_ for qw(
   ExtUtils::MakeMaker
+  FFI::Build::MM
   FFI::Platypus
+  FFI::Platypus::Memory
+  Ref::Util
+  Test2::Tools::FFI
   Test2::V0
 );
 
