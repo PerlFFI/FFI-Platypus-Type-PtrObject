@@ -130,7 +130,7 @@ sub ffi_custom_type_api_1
   Carp::croak("illegal class name: $wrapper_class") unless $wrapper_class =~ /^[A-Z_][0-9A-Z_]*(::[A-Z_][0-9A-Z_]*)*$/i;
 
   $constructor ||= sub {
-    bless { ptr => $_[0] }, $wrapper_class;
+    defined $_[0] ? bless { ptr => $_[0] }, $wrapper_class : undef;
   };
 
   return {

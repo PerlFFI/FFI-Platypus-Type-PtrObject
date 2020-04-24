@@ -32,6 +32,7 @@ $ffi->load_custom_type('::PtrObject', 'foo_t', 'Foo::Bar');
   $ffi->attach( set   => ['foo_t','string']    );
   $ffi->attach( get   => ['foo_t'] => 'string' );
   $ffi->attach( clone => ['foo_t'] => 'foo_t'  );
+  $ffi->attach( null  => ['foo_t'] => 'foo_t'  );
 
   sub take_ownership
   {
@@ -74,6 +75,7 @@ is(
       call [ isa => 'Foo::Bar' ] => T();
       call get => 'frooble';
     };
+    call null => U();
   },
   'regular object',
 );
