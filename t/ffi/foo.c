@@ -22,3 +22,9 @@ clone(foo_t *self)
   memcpy(clone->buffer, self->buffer, 100);
   return clone;
 }
+
+foo_t *
+null(foo_t *self)
+{
+  return NULL;
+}
