@@ -1,4 +1,4 @@
-# FFI::Platypus::Type::PtrObject [![Build Status](https://secure.travis-ci.org/Perl5-FFI/FFI-Platypus-Type-PtrObject.png)](http://travis-ci.org/Perl5-FFI/FFI-Platypus-Type-PtrObject)
+# FFI::Platypus::Type::PtrObject ![linux](https://github.com/PerlFFI/FFI-Platypus-Type-PtrObject/workflows/linux/badge.svg)
 
 Platypus custom type for an object wrapped around an opaque pointer
 
