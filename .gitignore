@@ -2,4 +2,7 @@ FFI-Platypus-Type-PtrObject-*
 /.build/
 *.swp
 
-
+/FFI-Platypus-Type-PtrObject-*
+/.build
+*.old
+*.orig
